@@ -1,0 +1,9 @@
+# Ignore everything
+
+# Except these folders
+!problem-day-1/
+!problem-day-2/
+!problem-day-3/
+
+
+
