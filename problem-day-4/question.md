@@ -33,3 +33,67 @@ Q2.
 
         ✨ Reinforces decreasing nested loop structure.
 
+
+Q3.
+
+    Print Pyramid Pattern
+
+        Input: Rows = 5
+
+        Output:
+
+            *
+           ***
+          *****
+         *******
+        *********
+
+        ✨ Teaches alignment using spaces and nested loops.
+
+Q4.
+
+    Print Inverted Pyramid Pattern
+
+        Input: Rows = 5
+
+        Output:
+
+        *********
+         *******
+          *****
+           ***
+            *
+
+        ✨ Teaches reverse space-star pattern alignment.
+
+Q5.
+
+    Print Hollow Square Pattern
+
+        Input: Rows = 5
+
+        Output:
+
+        *****
+        *   *
+        *   *
+        *   *
+        *****
+
+        ✨ Practices conditional printing within nested loops.
+
+Q6.    
+    
+    Print Hollow Pyramid Pattern
+
+        Input: Rows = 5
+
+        Output:
+
+            *
+           * *
+          *   *
+         *     *
+        *********
+
+        ✨ Combines conditionals and symmetrical logic in loops.
