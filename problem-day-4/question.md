@@ -97,3 +97,23 @@ Q6.
         *********
 
         ✨ Combines conditionals and symmetrical logic in loops.
+
+
+Q7.
+
+
+🏠 Homework / Practice Challenge
+
+    Print Hollow Inverted Pyramid
+
+        Input: Rows = 5
+
+        Output:
+
+        *********
+         *     *
+          *   *
+           * *
+            *
+
+        ✨ Focuses on conditionally printing edges and spaces.

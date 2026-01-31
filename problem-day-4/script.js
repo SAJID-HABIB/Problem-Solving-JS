@@ -19,7 +19,6 @@
 //   console.log(stars);
 // }
 
-
 // let row = 5;
 // for (let i = 1; i <= 2 * row - 1; i += 2) {
 //   let stars = "";
@@ -62,7 +61,6 @@
 //   console.log(stars);
 // }
 
-
 // let row = 5;
 // for (let i = 1; i <= row; i++) {
 //   // let stars = "";
@@ -71,9 +69,9 @@
 //     console.log("*");
 //    } else {
 //     console.log("\n");
-    
+
 //    }
-    
+
 //   }
 // }
 
@@ -88,38 +86,58 @@
 //     } else{
 //       line += " ";
 //     }
-    
+
 //   }
 //   console.log(line);
-  
+
 // }
 
-
 // let row = 5;
-// for (let i = 1; i <= row ; row-i) {
+// for (let i = 1; i <= row; row - i) {
 //   line = "";
-//   for (let j = 0; j <= row; 2 * (i - 1)- 1) {
+//   for (let j = 0; j <= row; 2 * (i - 1) - 1) {
 //     line += " ";
 //     if (j === row) {
 //       line = "*";
 //     }
 //   }
 //   console.log(line);
-  
 // }
 
-
-
-let row = 5;
+let row1 = 5;
 for (let i = 1; i <= 2 * row - 1; i += 2) {
   let stars = "";
   let currRow = (i + 1) / 2;
   for (let j = 1; j <= row + currRow - 1; j++) {
-    if (j <= row - currRow || j > row -currRow + 1 && j < row + currRow - 1 && i !== 2 * row -1) {
+    if (
+      j <= row - currRow ||
+      (j > row - currRow + 1 && j < row + currRow - 1 && i !== 2 * row - 1)
+    ) {
       stars += " ";
     } else {
       stars += "*";
     }
   }
+  console.log(stars);
+}
+
+let row = 5;
+
+for (let i = row; i >= 1; i--) {
+  let stars = "";
+  for (let j = 1; j <= row + i - 1; j++) {
+    if (i === row) {
+      stars += "*";
+    } else if (j <= row - i) {
+      stars += " ";
+    } else if (j === row - i + 1) {
+      stars += "*";
+    } else if (j === row + i - 1) {
+      stars += "*";
+    } else {
+      stars += " ";
+    }
+  }
+
   console.log(stars);
 }
