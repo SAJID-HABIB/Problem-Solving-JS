@@ -97,3 +97,37 @@ for (let i = 3; i <= 2 * row - 1; i += 2) {
   }
   console.log(stars);
    }
+
+
+
+   Q9.
+
+
+let row = 3;
+
+for (let i = 1; i <= 2 * row - 1; i += 2) {
+  let stars = "";
+  let currRow = (i + 1) / 2;
+  for (let j = 1; j <= row + currRow - 1; j++) {
+    if (j <= row - currRow) {
+      stars += " ";
+    } else {
+      stars += "*";
+    }
+  }
+
+  console.log(stars);
+}
+
+for (let i = 3; i >= 1; i -= 2) {
+  let stars = "";
+  let currRow = (i + 1) / 2;
+  for (let j = 1; j <= row + currRow - 1; j++) {
+    if (j <= row - currRow) {
+      stars += " ";
+    } else {
+      stars += "*";
+    }
+  }
+  console.log(stars);
+}
