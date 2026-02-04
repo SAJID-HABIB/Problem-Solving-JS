@@ -117,3 +117,43 @@ Q7.
             *
 
         ✨ Focuses on conditionally printing edges and spaces.
+
+Q8.
+
+
+
+
+    Print Hourglass Pattern
+
+        Input: Rows = 5
+
+        Output:
+
+        *********
+         *******
+          *****
+           ***
+            *
+           ***
+          *****
+         *******
+        *********
+
+        ✨ Practices combining inverse loops and symmetrical shapes.
+
+
+Q9.
+
+    Print Diamond Pattern
+
+        Input: Rows = 3
+
+        Output:
+
+            *
+           ***
+          *****
+           ***
+            *
+
+        ✨ Combines upper and lower pyramid logic for symmetry.

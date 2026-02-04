@@ -1,5 +1,7 @@
 // let r1 = 5;
 
+// const { i } = require("framer-motion/client");
+
 // const { line, li } = require("framer-motion/client");
 
 // for (let i = 1; i <= r; i++) {
@@ -43,6 +45,7 @@
 //     } else {
 //       stars += "*";
 //     }
+
 // let r1 = 5;
 // for (let i = 2 * r1 - 1; i >= 1; i -= 2) {
 //   let stars = "";
@@ -121,33 +124,98 @@
 //   console.log(stars);
 // }
 
-let row = 5;
+// let row = 5;
 
-for (let i = r; i >= 1; i--) {
-  let stars = "";
-  for (let j = 1; j <= r + i - 1; j++) {
-    if (i === r) {
-      stars += "*";
-    } else if (j <= r - i) {
-      stars += " ";
-    } else if (j === r - i + 1) {
-      stars += "*";
-    } else if (j === r + i - 1) {
-      stars += "*";
+// for (let i = r; i >= 1; i--) {
+//   let stars = "";
+//   for (let j = 1; j <= r + i - 1; j++) {
+//     if (i === r) {
+//       stars += "*";
+//     } else if (j <= r - i) {
+//       stars += " ";
+//     } else if (j === r - i + 1) {
+//       stars += "*";
+//     } else if (j === r + i - 1) {
+//       stars += "*";
+//     } else {
+//       stars += " ";
+//     }
+//   }
+
+//   console.log(stars);
+// }
+
+// let r = 5;
+
+// for (let i = 1; i <= r; i++) {
+//   let digit = "";
+//   for (let j = 1; j <= i; j++) {
+//     digit += (i + j + 2) % 2;
+//   }
+//   console.log(digit);
+// }
+
+
+
+
+//    let row1 = 5;
+//    for (let i = 2 * row1 - 1; i >= 1; i -= 2) {
+//     let stars = '';
+//     let currRow = (i + 1) /2;
+//     for (let j = 1; j <= (row1 + currRow) - 1; j++) {
+//       if (j <= row1 - currRow) {
+//         stars += " "; 
+//       } else{
+//         stars += "*"; 
+//       }
+//     }
+//     console.log(stars);
+//    }
+
+
+// let row = 5;
+// for (let i = 3; i <= 2 * row - 1; i += 2) {
+//   let stars = "";
+//   let currRow = (i + 1) / 2;
+//   for (let j = 1; j <= row + currRow - 1; j++) {
+//     if (j <= row - currRow) {
+//       stars += " ";
+//     } else {
+//       stars += "*";
+//     }
+//   }
+//   console.log(stars);
+//    }
+
+
+
+let row = 3;
+
+for (let i = 1; i <= 2 * row -1; i += 2) {
+  let  stars = "";
+  let currRow = (i + 1) / 2;
+  for (let j = 1; j <= row + currRow -1; j++){
+    if (j <= row - currRow) {
+    stars += " ";
     } else {
-      stars += " ";
+      stars += "*"; 
     }
   }
 
   console.log(stars);
+  
 }
 
-let r = 5;
-
-for (let i = 1; i <= r; i++) {
-  let digit = "";
-  for (let j = 1; j <= i; j++) {
-    digit += (i + j + 2) % 2;
+for (let i = 3; i >= 1; i -= 2) {
+  let stars = "";
+    let currRow = (i + 1) / 2;
+    for (let j = 1; j <= row + currRow -1; j++) {
+      if (j <= row - currRow) {
+    stars += " ";
+    } else {
+      stars += "*"; 
+    }
+    }
+    console.log(stars);
+    
   }
-  console.log(digit);
-}

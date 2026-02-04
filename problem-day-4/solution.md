@@ -30,7 +30,7 @@ Q2.
 
 Q3.
 
-et row = 5;
+let row = 5;
 for (let i = 1; i <= 2 * row - 1; i += 2) {
   let stars = "";
   let currRow = (i + 1) / 2;
@@ -43,6 +43,10 @@ for (let i = 1; i <= 2 * row - 1; i += 2) {
   }
   console.log(stars);
    }
+
+
+ Q4.
+ 
 
 
 Q5.
@@ -63,4 +67,33 @@ for (let i = 2 * row1 - 1; i >= 1; i -= 2) {
 }
 
 
-Q6.
+Q8.
+
+   let row1 = 5;
+   for (let i = 2 * row1 - 1; i >= 1; i -= 2) {
+    let stars = '';
+    let currRow = (i + 1) /2;
+    for (let j = 1; j <= (row1 + currRow) - 1; j++) {
+      if (j <= row1 - currRow) {
+        stars += " "; 
+      } else{
+        stars += "*"; 
+      }
+    }
+    console.log(stars);
+   }
+
+
+let row = 5;
+for (let i = 3; i <= 2 * row - 1; i += 2) {
+  let stars = "";
+  let currRow = (i + 1) / 2;
+  for (let j = 1; j <= row + currRow - 1; j++) {
+    if (j <= row - currRow) {
+      stars += " ";
+    } else {
+      stars += "*";
+    }
+  }
+  console.log(stars);
+   }
