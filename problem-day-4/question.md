@@ -157,3 +157,24 @@ Q9.
             *
 
         ✨ Combines upper and lower pyramid logic for symmetry.
+
+
+Q10.
+
+
+
+
+    Print Hollow Diamond Pattern
+
+        Input: Rows = 3
+
+        Output:
+
+            *
+           * *
+          *   *
+           * *
+            *
+
+        ✨ Teaches combining upward and downward hollow pyramids.
+

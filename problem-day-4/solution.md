@@ -131,3 +131,39 @@ for (let i = 3; i >= 1; i -= 2) {
   }
   console.log(stars);
 }
+
+
+Q10.
+
+
+let n = 3;
+let TotalRow = 2 * n - 1;
+for (let i = 1; i <= n; i++) {
+  let stars = "";
+  for (let j = 1; j <= n - i; j++) {
+    stars += " ";
+  }
+  stars += "*";
+  if (i > 1) {
+    for (let j = 1; j <= 2 * (i - 1) - 1; j++) {
+      stars += " ";
+    }
+    stars += "*";
+  }
+  console.log(stars);
+}
+
+for (let i = n - 1; i >= 1; i--) {
+  let stars = "";
+  for (let j = 1; j <= n - i; j++) {
+    stars += " ";
+  }
+  stars += "*";
+  if (i > 1) {
+    for (let j = 1; j <= 2 * (i - 1) - 1; j++) {
+      stars += " ";
+    }
+    stars += "*";
+  }
+  console.log(stars);
+}

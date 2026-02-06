@@ -155,22 +155,51 @@
 //   console.log(digit);
 // }
 
-//    let row1 = 5;
-//    for (let i = 2 * row1 - 1; i >= 1; i -= 2) {
-//     let stars = '';
-//     let currRow = (i + 1) /2;
-//     for (let j = 1; j <= (row1 + currRow) - 1; j++) {
-//       if (j <= row1 - currRow) {
-//         stars += " ";
-//       } else{
-//         stars += "*";
-//       }
+// let row1 = 5;
+// for (let i = 2 * row1 - 1; i >= 1; i -= 2) {
+//   let stars = "";
+//   let currRow = (i + 1) / 2;
+//   for (let j = 1; j <= row1 + currRow - 1; j++) {
+//     if (j <= row1 - currRow) {
+//       stars += " ";
+//     } else {
+//       stars += "*";
 //     }
-//     console.log(stars);
-//    }
+//   }
+//   console.log(stars);
+// }
 
-// let row = 5;
-// for (let i = 3; i <= 2 * row - 1; i += 2) {
+// let row2 = 5;
+// for (let i = 3; i <= 2 * row2 - 1; i += 2) {
+//   let stars = "";
+//   let currRow = (i + 1) / 2;
+//   for (let j = 1; j <= row2 + currRow - 1; j++) {
+//     if (j <= row2 - currRow) {
+//       stars += " ";
+//     } else {
+//       stars += "*";
+//     }
+//   }
+//   console.log(stars);
+// }
+
+// let row = 3;
+
+// for (let i = 1; i <= 2 * row - 1; i += 2) {
+//   let stars = "";
+//   let currRow = (i + 1) / 2;
+//   for (let j = 1; j <= row + currRow - 1; j++) {
+//     if (j <= row - currRow) {
+//       stars += " ";
+//     } else {
+//       stars += "*";
+//     }
+//   }
+
+//   console.log(stars);
+// }
+
+// for (let i = 3; i >= 1; i -= 2) {
 //   let stars = "";
 //   let currRow = (i + 1) / 2;
 //   for (let j = 1; j <= row + currRow - 1; j++) {
@@ -181,33 +210,50 @@
 //     }
 //   }
 //   console.log(stars);
-//    }
+// }
 
-let row = 3;
-
-for (let i = 1; i <= 2 * row - 1; i += 2) {
+let n = 3;
+let TotalRow = 2 * n - 1;
+for (let i = 1; i <= n; i++) {
   let stars = "";
-  let currRow = (i + 1) / 2;
-  for (let j = 1; j <= row + currRow - 1; j++) {
-    if (j <= row - currRow) {
-      stars += " ";
-    } else {
-      stars += "*";
-    }
+  for (let j = 1; j <= n - i; j++) {
+    stars += " ";
   }
-
-  console.log(stars);
-}
-
-for (let i = 3; i >= 1; i -= 2) {
-  let stars = "";
-  let currRow = (i + 1) / 2;
-  for (let j = 1; j <= row + currRow - 1; j++) {
-    if (j <= row - currRow) {
+  stars += "*";
+  if (i > 1) {
+    for (let j = 1; j <= 2 * (i - 1) - 1; j++) {
       stars += " ";
-    } else {
-      stars += "*";
     }
+    stars += "*";
   }
   console.log(stars);
 }
+
+for (let i = n - 1; i >= 1; i--) {
+  let stars = "";
+  for (let j = 1; j <= n - i; j++) {
+    stars += " ";
+  }
+  stars += "*";
+  if (i > 1) {
+    for (let j = 1; j <= 2 * (i - 1) - 1; j++) {
+      stars += " ";
+    }
+    stars += "*";
+  }
+  console.log(stars);
+}
+
+
+let row = 5;
+for (let i = 1; i <= row; i++) {
+let stars = "";
+  for (let j = 1; j <= row - i; j++) {
+      stars += " "; 
+  }
+  for (let j = 1; j <= row; j++) {
+     stars += "*"; 
+    }
+  console.log(stars); 
+}
+
