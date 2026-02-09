@@ -167,3 +167,14 @@ for (let i = n - 1; i >= 1; i--) {
   }
   console.log(stars);
 }
+
+
+Q11.
+
+
+let n = 3;
+for (let i = 1; i <= 10; i++) {
+  let result ;
+  result = i * n;
+  console.log(result);
+}

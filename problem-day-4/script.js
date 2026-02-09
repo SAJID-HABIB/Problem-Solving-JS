@@ -212,48 +212,64 @@
 //   console.log(stars);
 // }
 
+// let n = 3;
+// let TotalRow = 2 * n - 1;
+// for (let i = 1; i <= n; i++) {
+//   let stars = "";
+//   for (let j = 1; j <= n - i; j++) {
+//     stars += " ";
+//   }
+//   stars += "*";
+//   if (i > 1) {
+//     for (let j = 1; j <= 2 * (i - 1) - 1; j++) {
+//       stars += " ";
+//     }
+//     stars += "*";
+//   }
+//   console.log(stars);
+// }
+
+// for (let i = n - 1; i >= 1; i--) {
+//   let stars = "";
+//   for (let j = 1; j <= n - i; j++) {
+//     stars += " ";
+//   }
+//   stars += "*";
+//   if (i > 1) {
+//     for (let j = 1; j <= 2 * (i - 1) - 1; j++) {
+//       stars += " ";
+//     }
+//     stars += "*";
+//   }
+//   console.log(stars);
+// }
+
+// let row = 5;
+// for (let i = 1; i <= row; i++) {
+//   let stars = "";
+//   for (let j = 1; j <= row - i; j++) {
+//     stars += " ";
+//   }
+//   for (let j = 1; j <= row; j++) {
+//     stars += "*";
+//   }
+//   console.log(stars);
+// }
+
+
+// let input = 4;
+// // let number = 6;
+// for (let i = 1; i <= input ; i++) {
+//   let table = 0;
+//   for (let j = 1; j <= i; j++) {
+//     table = i * j;
+//   }
+//   console.log(table);  
+// }
+
 let n = 3;
-let TotalRow = 2 * n - 1;
-for (let i = 1; i <= n; i++) {
-  let stars = "";
-  for (let j = 1; j <= n - i; j++) {
-    stars += " ";
-  }
-  stars += "*";
-  if (i > 1) {
-    for (let j = 1; j <= 2 * (i - 1) - 1; j++) {
-      stars += " ";
-    }
-    stars += "*";
-  }
-  console.log(stars);
+for (let i = 1; i <= 10; i++) {
+  let result ;
+  result = i * n;
+  console.log(result);
 }
-
-for (let i = n - 1; i >= 1; i--) {
-  let stars = "";
-  for (let j = 1; j <= n - i; j++) {
-    stars += " ";
-  }
-  stars += "*";
-  if (i > 1) {
-    for (let j = 1; j <= 2 * (i - 1) - 1; j++) {
-      stars += " ";
-    }
-    stars += "*";
-  }
-  console.log(stars);
-}
-
-
-let row = 5;
-for (let i = 1; i <= row; i++) {
-let stars = "";
-  for (let j = 1; j <= row - i; j++) {
-      stars += " "; 
-  }
-  for (let j = 1; j <= row; j++) {
-     stars += "*"; 
-    }
-  console.log(stars); 
-}
-

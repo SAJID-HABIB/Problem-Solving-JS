@@ -178,3 +178,18 @@ Q10.
 
         ✨ Teaches combining upward and downward hollow pyramids.
 
+
+Q11.
+
+Print Multiplication Table (Single and Upto N)
+
+    Input 1: Number = 5
+
+    Output:
+
+    5 x 1 = 5
+    5 x 2 = 10
+    ...
+    5 x 10 = 50
+
+    Input 2: Upto = 3
